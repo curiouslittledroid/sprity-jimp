@@ -1,0 +1,47 @@
+{
+  "name": "sprity-jimp",
+  "version": "0.0.1",
+  "description": "jimp image processing engine for sprity",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xcaliber-tech/sprity-jimp.git"
+  },
+  "homepage": "https://github.com/xcaliber-tech/sprity-jimp",
+  "bugs": {
+    "url": "https://github.com/xcaliber-tech/sprity-jimp/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/xcaliber-tech/sprity-jimp/blob/master/LICENSE-MIT"
+    }
+  ],
+  "author": {
+    "name": "Fabio Picheli",
+    "email": "fabio.picheli@xcaliber.com",
+    "url": "http://xcaliber.com"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha --reporter spec",
+    "style": "jscs index.js"
+  },
+  "main": "./index.js",
+  "keywords": [
+    "sprites",
+    "sprite",
+    "jimp",
+    "css-sprite",
+    "sprity"
+  ],
+  "dependencies": {
+    "jimp": "^0.2.28",
+    "bluebird": "^2.9.24"
+  },
+  "devDependencies": {
+    "chai": "^2.2.0",
+    "mocha": "^2.2.4"
+  }
+}
