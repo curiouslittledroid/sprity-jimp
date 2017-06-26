@@ -1,4 +1,5 @@
 # sprity-jimp
+[![NPM version](https://badge.fury.io/js/sprity-jimp.svg)](http://badge.fury.io/js/sprity-jimp)
 
 > Image processor for [sprity](https://npmjs.org/package/sprity) that uses [jimp](https://www.npmjs.com/package/jimp) as the image processing library
 
