@@ -3,9 +3,9 @@
 const Promise = require('bluebird');
 const Jimp = require('jimp');
 
-var createImage = (width, height) => {
+var createImage = (width, height, bgColor) => {
   return new Promise((resolve, reject) => {
-    new Jimp(width, height, (err, image) => {
+    new Jimp(width, height, bgColor, (err, image) => {
       if (!err) {
         resolve(image);
       } else {
@@ -72,7 +72,7 @@ var scaleImage = (base, type, opt) => {
 
 module.exports = {
   create: (tiles, opt) => {
-    return createImage(opt.width, opt.height)
+    return createImage(opt.width, opt.height, '#fff')
       .then((c) => Promise.map(tiles, tile => pushImage(tile, c), { concurrency: 1 }))
       .then(c => toBuffer(c[0], opt));
   },

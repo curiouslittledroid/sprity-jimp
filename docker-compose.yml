@@ -1,0 +1,17 @@
+version: '3'
+services:
+    node:
+        image: node:8.10
+        container_name: node_sprity
+#        ports:
+#           - 9229:9229
+        volumes:
+            - /Users/phil/goloki/app/sprity-jimp/:/app
+            - /Users/phil/.ssh:/root/.ssh
+            - /Users/phil/.aws:/root/.aws
+        working_dir: /app
+        entrypoint: /bin/sh
+        environment:
+            - AWS_DEFAULT_REGION=ap-southeast-2
+        tty: true
+        stdin_open: true

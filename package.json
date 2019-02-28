@@ -37,8 +37,8 @@
     "sprity"
   ],
   "dependencies": {
-    "jimp": "^0.2.28",
-    "bluebird": "^2.9.24"
+    "bluebird": "^2.9.24",
+    "jimp": "^0.6.0"
   },
   "devDependencies": {
     "chai": "^2.2.0",
