@@ -1,15 +1,7 @@
 {
-  "name": "sprity-jimp",
+  "name": "@philca/sprity-jimp",
   "version": "0.0.2",
   "description": "jimp image processing engine for sprity",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/xcaliber-tech/sprity-jimp.git"
-  },
-  "homepage": "https://github.com/xcaliber-tech/sprity-jimp",
-  "bugs": {
-    "url": "https://github.com/xcaliber-tech/sprity-jimp/issues"
-  },
   "licenses": [
     {
       "type": "MIT",
